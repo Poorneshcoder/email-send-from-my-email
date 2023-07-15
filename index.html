@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact form</title>
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="./sucess.html" id="submit" name="RegForm" onsubmit="validForm(); return sucessPage();" >
+            <h3>ENQUIRY</h3>
+            <input type="text" id="name" name="name" placeholder="Name...">
+            <input type="email" id="email" name="email" placeholder="Email...">
+            <input type="text" id="phone" name="phno" placeholder="Phone number...">
+            <textarea name="message" id="message" cols="0" rows="4"></textarea>
+           
+                <input type="submit" value="Send" class="btn" >
+            
+        </form>
+    </div>
+     
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
